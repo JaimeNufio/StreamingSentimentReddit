@@ -2,3 +2,4 @@ database.ini
 __pycache__/*
 code/
 code.zip
+*/credentials.json
