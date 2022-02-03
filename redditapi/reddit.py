@@ -19,17 +19,32 @@ def subreddit():
         print(submission.title)
         pprint.pprint(vars(submission).keys())
 
-def user():
+def userComments(user):
     #look intogenerator
-    comments = reddit.redditor("thinkingwithportal").comments.top('all',limit=None);
+    comments = reddit.redditor(user).comments.top('all',limit=None);
 
     cnt = 0;
     for x in comments:
         cnt+=1
-        print(x.body[:144],str(cnt))
+        #print(x.body[:144],str(cnt))
+        pprint.pprint(vars(x))
+        #body
+        #id
+        #link_author    -
+        #link_id        -
+        #link_perma     -
+        #link_title     - 
+        #link_url       -
+        #num_comments   -
+        #permalink
+        #score
+        #subreddit_id   -
+        #subreddit_name_prefixed    -
+        #ups
+        return
 
 
-user()
+userComments('thinkingwithportal')
 
 """
 Goals
