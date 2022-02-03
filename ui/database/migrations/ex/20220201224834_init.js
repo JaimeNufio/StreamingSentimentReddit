@@ -28,7 +28,7 @@ exports.up = function(knex) {
  * @returns { Promise<void> }
  */
 exports.down = function(knex) {
-  return knex .schema.dropTableIfEists('video')
-  .dropTableIfEists('user')
-  .dropTableIfEists('channel')
+  return knex .schema.dropTableIfExists('video')
+  .dropTableIfExists('user')
+  .dropTableIfExists('channel')
 };

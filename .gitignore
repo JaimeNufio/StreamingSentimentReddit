@@ -2,4 +2,5 @@ database.ini
 __pycache__/*
 code/
 code.zip
-*/credentials.json
+ui/database/credentials.json
+redditapi/secret.JSON
